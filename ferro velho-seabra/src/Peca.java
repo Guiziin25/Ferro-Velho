@@ -4,8 +4,8 @@ public class Peca {
     private String nome;
     private LocalDate DataEntrada;
     private String Descricao;
-    private Tipo;
-    private Qualidade;
+    private Tipo tipo;
+    private Qualidade qualidade;
 
     public String getNome(){return this.nome}
     public void setnome(String n){this.nome=n}
