@@ -21,3 +21,13 @@ O projeto ainda está aberto a discussões e alterações, de acordo com as orie
 * Usuários devem possuir métodos para adicionar e remover itens de seu carrinho.
 * Usuários devem poder buscar por itens a partir de: Nome, Tipo, Automóvel, Qualidade e Preço.
 * Navegação entre a página de cada item.
+
+* ## Divisão do Projeto:
+* README e UML: Ricardo Serra;
+* Esqueleto das classes: Arthur Seabra;
+* Classe Cliente e suas relações: Daniel Feitosa;
+* Classe Item e suas relações: Guilherme Augusto;
+* Classe Carrinho e suas relações e métodos: Ricardo Serra;
+* Controladores e Repositórios: Guilherme e Ricardo (Mas o grupo todo participará dessa etapa);
+* Telas: Arthur Seabra;
+* Integração do JavaFX no código: Arthur e Daniel (Mas o grupo todo participará dessa etapa);
