@@ -31,3 +31,4 @@ O projeto ainda está aberto a discussões e alterações, de acordo com as orie
 * Controladores e Repositórios: Guilherme e Ricardo (Mas o grupo todo participará dessa etapa);
 * Telas: Arthur Seabra;
 * Integração do JavaFX no código: Arthur e Daniel (Mas o grupo todo participará dessa etapa);
+* Observação: O trabalho ainda será realizado em GRUPO, portanto poderão haver contribuições e correções de outros participantes nas classes onde não estão escalados.
