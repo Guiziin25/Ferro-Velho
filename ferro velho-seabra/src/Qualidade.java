@@ -6,5 +6,5 @@ public enum Qualidade {
     DESCARTE("incinerável");
 
     private String estado;
-    Qualidade(String estado)
+    Qualidade(String estado);
 }
