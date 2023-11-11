@@ -1,11 +1,16 @@
 import java.util.ArrayList;
 import java.util.List;
 
+//Atributos e declaração
 public class Carrinho {
     private List<Peca> carrinhoDeCompras;
-    public Carrinho(){ //construtor
+
+    //Construtor
+    public Carrinho(){
         this.carrinhoDeCompras = new ArrayList<>();
     }
+
+
     //Métodos
     public void addItem(Peca item){
         carrinhoDeCompras.add(item);
@@ -18,5 +23,4 @@ public class Carrinho {
         }
         return total;
         }
-    }
 }

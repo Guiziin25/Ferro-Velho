@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 
+//Atributos e declaração
 public class Peca {
     private String nome;
     private LocalDate DataEntrada;
@@ -8,6 +9,7 @@ public class Peca {
     private Qualidade qualidade;
     private Double preco;
 
+    //Construtor
     public Peca(String n, LocalDate data, String desc, Tipo tipo, Qualidade qualidade, Double preco){
         this.Descricao = desc;
         this.DataEntrada = data;
@@ -17,6 +19,7 @@ public class Peca {
         this.preco = preco;
     }
 
+    //Getters e Setters
     public String getNome(){
         return this.nome;
     }

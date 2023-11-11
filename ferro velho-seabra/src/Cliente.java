@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 
+//Atributos e declaracao
 public class Cliente {
     private String cpf;
     private String email;
@@ -8,7 +9,8 @@ public class Cliente {
     private LocalDate datanasc;
     private Carrinho carrinho;
 
-    public Cliente(String c, String e, String n, String s, LocalDate d, Carrinho a){ //construtor
+    //Construtor
+    public Cliente(String c, String e, String n, String s, LocalDate d, Carrinho a){
         this.cpf = c;
         this.email = e;
         this.nome = n;
@@ -18,7 +20,8 @@ public class Cliente {
     }
 
 
-    public String getCpf(){ //getters e setters
+    //Getters e Setters
+    public String getCpf(){
         return this.cpf;
     }
 
