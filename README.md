@@ -18,21 +18,21 @@ O projeto ainda está aberto a discussões e alterações, de acordo com as orie
 * A ordem das telas seguirá o fluxograma anexado(Ainda vamos fazer).
 
 ## Requisitos do Projeto:
-1- Usuários devem possuir métodos para adicionar e remover itens de seu carrinho.
-2- Usuários devem poder buscar por itens e ordená-los a partir do atributo: Nome.
-3- Usuários devem poder buscar por itens e ordená-los a partir do atributo: Tipo.
-4- Usuários devem poder buscar por itens e ordená-los a partir do atributo: Automóvel.
-5- Usuários devem poder buscar por itens e ordená-los a partir do atributo: Qualidade.
-6- Usuários devem poder buscar por itens e ordená-los a partir de: Preço.
-7- Navegação entre a página de cada item.
-8- Usuário Admin deverá poder adicionar e remover Items.
-9- Usuário Admin deverá poder transformar outros usuários em Admins.
-10- O programa poderá gerar um relatório de uma venda, contendo nome do cliente, nome do vendedor(admin), produtos e quantidades.
-11- O progrma conterá uma função para calcular o preço total do carrinho de um cliente.
-12- Clientes podem acessar seu carrinho e histórico de compras.
-13- O programa conterá um método que diminui a qualidade da peça de acordo com o tempo que passou no estoque.
-14- Um sistema de autenticação de usuário estará presente no código.
-15- Algumas funcionalidades deverão estar disponíveis somente para a classe administrador.
+* 1- Usuários devem possuir métodos para adicionar e remover itens de seu carrinho.
+* 2- Usuários devem poder buscar por itens e ordená-los a partir do atributo: Nome.
+* 3- Usuários devem poder buscar por itens e ordená-los a partir do atributo: Tipo.
+* 4- Usuários devem poder buscar por itens e ordená-los a partir do atributo: Automóvel.
+* 5- Usuários devem poder buscar por itens e ordená-los a partir do atributo: Qualidade.
+* 6- Usuários devem poder buscar por itens e ordená-los a partir de: Preço.
+* 7- Navegação entre a página de cada item.
+* 8- Usuário Admin deverá poder adicionar e remover Items.
+* 9- Usuário Admin deverá poder transformar outros usuários em Admins.
+* 10- O programa poderá gerar um relatório de uma venda, contendo nome do cliente, nome do vendedor(admin), produtos e quantidades.
+* 11- O progrma conterá uma função para calcular o preço total do carrinho de um cliente.
+* 12- Clientes podem acessar seu carrinho e histórico de compras.
+* 13- O programa conterá um método que diminui a qualidade da peça de acordo com o tempo que passou no estoque.
+* 14- Um sistema de autenticação de usuário estará presente no código.
+* 15- Algumas funcionalidades deverão estar disponíveis somente para a classe administrador.
 
 * ## Divisão do Projeto:
 * Classe Item: Guilherme Augusto
