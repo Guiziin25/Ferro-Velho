@@ -5,17 +5,19 @@ public class Peca {
     private String nome;
     private LocalDate DataEntrada;
     private String Descricao;
-    private Tipo tipo;
-    private Qualidade qualidade;
+    private EnumTipo tipo;
+    private EnumQualidade qualidade;
+    private EnumAutomovel automovel;
     private Double preco;
 
     //Construtor
-    public Peca(String n, LocalDate data, String desc, Tipo tipo, Qualidade qualidade, Double preco){
+    public Peca(String n, LocalDate data, String desc, EnumTipo tipo, EnumQualidade qualidade, EnumAutomovel automovel, Double preco){
         this.Descricao = desc;
         this.DataEntrada = data;
         this.nome = n;
         this.tipo = tipo;
         this.qualidade = qualidade;
+        this.automovel = automovel;
         this.preco = preco;
     }
 
@@ -24,7 +26,7 @@ public class Peca {
         return this.nome;
     }
     public void setnome(String n){
-        this.nome=n;
+        this.nome=nome;
     }
 
     public LocalDate getDataEntrada() {
@@ -40,19 +42,27 @@ public class Peca {
     public void setDescricao(String desc){
         this.Descricao=desc;
     }
-    public Tipo getTipo() {
+    public EnumTipo getTipo() {
         return tipo;
     }
 
-    public void setTipo(Tipo tipo) {
+    public void setTipo(EnumTipo tipo) {
         this.tipo = tipo;
     }
-    public Qualidade getQualidade() {
+    public EnumQualidade getEnumQualidade() {
         return qualidade;
     }
 
-    public void setQualidade(Qualidade qualidade) {
+    public void setQualidade(EnumQualidade qualidade) {
         this.qualidade = qualidade;
+    }
+
+    public EnumAutomovel getEnumAutomovel() {
+        return automovel;
+    }
+
+    public void setAutomovel(EnumAutomovel automovel) {
+        this.automovel = automovel;
     }
 
     public Double getPreco() {
