@@ -10,13 +10,13 @@ public class Cliente {
     private Carrinho carrinho;
 
     //Construtor
-    public Cliente(String c, String e, String n, String s, LocalDate d, Carrinho a){
-        this.cpf = c;
-        this.email = e;
-        this.nome = n;
-        this.senha = s;
-        this.datanasc = d;
-        this.carrinho = a;
+    public Cliente(String cpf, String email, String nome, String senha, LocalDate datanasc, Carrinho carrinho){
+        this.cpf = cpf;
+        this.email = email;
+        this.nome = nome;
+        this.senha = senha;
+        this.datanasc = datanasc;
+        this.carrinho = carrinho;
     }
 
 
@@ -26,35 +26,35 @@ public class Cliente {
     }
 
     public void setCpf(String c) {
-        this.cpf = c;
+        this.cpf = cpf;
     }
 
     public String getEmail() {
         return this.email;
     }
     public void setEmail(String e){
-        this.email= e;
+        this.email= email;
     }
 
     public String getNome(){
         return this.nome;
     }
     public void setNome(String n){
-        this.nome= n;
+        this.nome= nome;
     }
 
     public String getSenha() {
         return this.senha;
     }
     public void setSenha(String s) {
-        this.senha = s;
+        this.senha = senha;
     }
 
     public LocalDate getDatanasc() {
         return this.datanasc;
     }
     public void setDatanasc(LocalDate n){
-        this.datanasc= n;
+        this.datanasc= datanasc;
     }
     
     public Carrinho getCarrinho() {
