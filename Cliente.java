@@ -6,6 +6,4 @@ public class Cliente {
     LocalDate dataNasc;
     String email;
     String senha;
-    
-    String endereco;
 }
