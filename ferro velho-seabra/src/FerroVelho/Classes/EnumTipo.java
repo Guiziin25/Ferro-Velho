@@ -1,3 +1,4 @@
+package FerroVelho.Classes;
 public enum EnumTipo {
     PORTA,
     CAPO,
