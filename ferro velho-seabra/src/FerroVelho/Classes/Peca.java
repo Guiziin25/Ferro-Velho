@@ -1,3 +1,4 @@
+package FerroVelho.Classes;
 import java.time.LocalDate;
 
 //Atributos e declaração
@@ -25,7 +26,7 @@ public class Peca {
     public String getNome(){
         return this.nome;
     }
-    public void setnome(String n){
+    public void setnome(String nome){
         this.nome=nome;
     }
 
