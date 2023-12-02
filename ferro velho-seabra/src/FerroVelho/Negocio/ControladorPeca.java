@@ -1,5 +1,5 @@
 package FerroVelho.Negocio;
 
-public class ControladorPeca {
+public abstract class ControladorPeca {
     
 }
