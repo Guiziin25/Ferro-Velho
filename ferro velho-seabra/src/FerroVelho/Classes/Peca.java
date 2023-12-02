@@ -12,10 +12,10 @@ public class Peca {
     private Double preco;
 
     //Construtor
-    public Peca(String n, LocalDate data, String desc, EnumTipo tipo, EnumQualidade qualidade, EnumAutomovel automovel, Double preco){
-        this.Descricao = desc;
+    public Peca(String nome, LocalDate data, String descricao, EnumTipo tipo, EnumQualidade qualidade, EnumAutomovel automovel, Double preco){
+        this.Descricao = descricao;
         this.DataEntrada = data;
-        this.nome = n;
+        this.nome = nome;
         this.tipo = tipo;
         this.qualidade = qualidade;
         this.automovel = automovel;
