@@ -1,9 +1,11 @@
 package FerroVelho.Classes;
+import FerroVelho.Negocio.ControladorVenda;
+
 import java.util.ArrayList;
 import java.util.List;
 
 //Atributos e declaração
-public class Carrinho {
+public class Carrinho extends ControladorVenda {
     private List<Peca> carrinhoDeCompras;
 
     //Construtor
@@ -28,5 +30,25 @@ public class Carrinho {
 
     public double calcularPrecoTotal() {
         return 0;
+    }
+
+    @Override
+    public void calculaValorTotal() {
+
+    }
+
+    @Override
+    public void FinalizaVenda() {
+
+    }
+
+    @Override
+    public void ImprimeLista() {
+
+    }
+
+    @Override
+    public void CalculaQuantidade() {
+
     }
 }

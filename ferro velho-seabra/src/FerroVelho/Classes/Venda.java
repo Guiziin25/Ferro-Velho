@@ -1,9 +1,11 @@
 package FerroVelho.Classes;
 
+import FerroVelho.Negocio.ControladorVenda;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-public class Venda {
+public class Venda extends ControladorVenda {
     private String CodVenda;
     private LocalDate DataVenda;
     private float ValorTotal;
@@ -31,4 +33,24 @@ public class Venda {
     public boolean isFinalizada() {return Finalizada;}
 
     public void setFinalizada(boolean finalizada) {Finalizada = finalizada;}
+
+    @Override
+    public void calculaValorTotal() {
+
+    }
+
+    @Override
+    public void FinalizaVenda() {setFinalizada(true);
+
+    }
+
+    @Override
+    public void ImprimeLista() {
+
+    }
+
+    @Override
+    public void CalculaQuantidade() {
+
+    }
 }

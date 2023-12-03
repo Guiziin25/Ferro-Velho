@@ -7,11 +7,15 @@ public class Login implements InterfaceLogin {
     private String usuario;
     private String senha;
 
+
+    private boolean confirmado;
+
     //construtor da classe
-    public Login(String em, String us, String sn){
-        this.email= em;
-        this.usuario=us;
-        this.senha=sn;
+    public Login(String email, String usuario, String senha){
+        this.email= email;
+        this.usuario=usuario;
+        this.senha=senha;
+        this.confirmado=false;
     }
 
     //Getters e Setters
@@ -21,7 +25,23 @@ public class Login implements InterfaceLogin {
     public void setEmail(String email){this.email=email;}
     public String getSenha(){return this.senha;}
     public void setSenha(String senha){this.senha=senha;}
+    public boolean isConfirmado() {
+        return confirmado;
+    }
 
-    public void login() {}
+    public void setConfirmado(boolean confirmado) {
+        this.confirmado = confirmado;
+    }
+//metodos
+    //metodo pra confirmar as informações digitadas
+    public void login() {
+        //if email/usuario e senha equals (email/usuario, senha) de algum objeto usuario
+        // puxar do repositorio ou algum array(?)
+        this.setConfirmado(true);
+    }
+
+    //método da interface pra excluir os caracteres digitados.
     public void limpar() {}
+    //
+    public void logout(){}
 }
