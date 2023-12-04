@@ -8,7 +8,9 @@ public class Usuario {
     private String nome;
     private String senha;
     private LocalDate datanasc;
-    private Boolean ehAdmin;
+    private EnumTipoUser tipo;
+    private String login;
+
 
 
     //Construtor
@@ -18,7 +20,7 @@ public class Usuario {
         this.nome = nome;
         this.senha = senha;
         this.datanasc = datanasc;
-        this.ehAdmin = false;
+        this.tipo = EnumTipoUser.NORMAL;
     }
 
 
@@ -45,6 +47,15 @@ public class Usuario {
         this.nome= nome;
     }
 
+     public String getLogin() {
+        return login;
+    }
+
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
     public String getSenha() {
         return this.senha;
     }
@@ -59,13 +70,13 @@ public class Usuario {
         this.datanasc= datanasc;
     }
 
-    public Boolean getEhAdmin() {
-        return ehAdmin;
+   public EnumTipoUser getTipo() {
+        return tipo;
     }
 
 
-    public void setEhAdmin(Boolean ehAdmin) {
-        this.ehAdmin = ehAdmin;
+    public void setTipo(EnumTipoUser tipo) {
+        this.tipo = tipo;
     }
     
 }
