@@ -1,4 +1,5 @@
 package FerroVelho.Classes;
+import java.sql.SQLOutput;
 import java.time.LocalDate;
 
 //Atributos e declaracao
@@ -78,5 +79,17 @@ public class Usuario {
     public void setTipo(EnumTipoUser tipo) {
         this.tipo = tipo;
     }
-    
+
+    //metodo pra testar a classe no main
+    public void perfil(){
+        System.out.println("as informações do usuario são:");
+        System.out.printf("nome:",getNome());
+        System.out.printf("cpf:", getCpf());
+        System.out.printf("email:",getEmail());
+        System.out.printf("login:", getLogin());
+        System.out.printf("senha:", getSenha());
+        System.out.printf("data de nascimento:", getDatanasc());
+        System.out.printf("tipo:", getTipo());
+
+    }
 }

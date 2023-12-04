@@ -2,9 +2,7 @@ package FerroVelho;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-import FerroVelho.Classes.EnumAutomovel;
-import FerroVelho.Classes.EnumQualidade;
-import FerroVelho.Classes.EnumTipo;
+import FerroVelho.Classes.*;
 
 public class Main {
 
@@ -20,5 +18,4 @@ public class Main {
         for(EnumQualidade c : EnumQualidade.values())
             System.out.printf("%s%n", c);
     }
-
 }

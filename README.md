@@ -34,4 +34,6 @@ O projeto ainda está aberto a discussões e alterações, de acordo com as orie
 * Classe Usuario: Ricardo Serra
 * Classe Carrinho: Daniel Feitosa
 * Classe Venda: Arthur Seabra
+* Classe ItemVenda: Arthur Seabra
+* Classe Login: Arthur Seabra
 * Observação: O trabalho ainda será realizado em GRUPO, portanto poderão haver contribuições e correções de outros participantes nas classes onde não estão escalados.

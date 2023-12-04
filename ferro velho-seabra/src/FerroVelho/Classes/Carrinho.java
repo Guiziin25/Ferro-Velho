@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 //Atributos e declaração
-public class Carrinho extends ControladorVenda {
+public class Carrinho{
     private List<Peca> carrinhoDeCompras;
 
     //Construtor
@@ -32,23 +32,5 @@ public class Carrinho extends ControladorVenda {
         return 0;
     }
 
-    @Override
-    public void calculaValorTotal() {
 
-    }
-
-    @Override
-    public void FinalizaVenda() {
-
-    }
-
-    @Override
-    public void ImprimeLista() {
-
-    }
-
-    @Override
-    public void CalculaQuantidade() {
-
-    }
 }

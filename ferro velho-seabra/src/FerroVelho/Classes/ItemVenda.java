@@ -7,6 +7,11 @@ public class ItemVenda {
 
     private void inserirItem() {
     };
+    //metodo pra teste na main
+    public void mostraritemvenda(){
+        System.out.println("quantidade"+getQuantidade());
+        System.out.println("Peça:" + getItem());
+    }
 
     //construtor
     public ItemVenda(Peca item, int quanti){

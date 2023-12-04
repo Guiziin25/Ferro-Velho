@@ -3,37 +3,41 @@ package FerroVelho.Classes;
 import FerroVelho.Negocio.ControladorVenda;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 
 public class Venda extends ControladorVenda {
-    private String CodVenda;
+    private static String CodVenda;
     private LocalDate DataVenda;
-    private float ValorTotal;
+    private double ValorTotal;
     private int QuanTotal;
     private boolean Finalizada;
     //private LISTA dos tipos de peças
 
     //construtor da classe->
-    public Venda (String cd, LocalDate dtv, float vt, int qt){
-        this.CodVenda= cd;
-        this.DataVenda=dtv;
-        this.ValorTotal=vt;
-        this.QuanTotal= qt;
+    public Venda (String codvenda, double valort, int quant, LocalDate datavenda){
+        Venda.CodVenda= "#"+codvenda ;
+        this.DataVenda= datavenda;
+        this.ValorTotal=valort;
+        this.QuanTotal= quant;
         this.Finalizada= false;
 
     }
-    public String getCodVenda(){return this.CodVenda;}
-    public void setCodVenda(String codVenda){this.CodVenda= codVenda;}
+    public String getCodVenda(){return CodVenda;}
+    public void setCodVenda(String codVenda){this.CodVenda= "#"+codVenda;}
     public LocalDate getDataVenda(){return this.DataVenda;}
     public void setDataVenda(LocalDate dataVenda) {DataVenda = dataVenda;}
-    public float getValorTotal(){return this.ValorTotal;}
-    public void setValorTotal(float valorTotal){this.ValorTotal=valorTotal;}
+    public double getValorTotal(){return this.ValorTotal;}
+    public void setValorTotal(double valorTotal){this.ValorTotal=valorTotal;}
     public int getQuanTotal(){return this.QuanTotal;}
     public void setQuanTotal(int quanTotal){this.QuanTotal= quanTotal;}
     public boolean isFinalizada() {return Finalizada;}
-
     public void setFinalizada(boolean finalizada) {Finalizada = finalizada;}
-
+    // método pra teste na main
+    public void infovenda(){
+        System.out.println("as informações da venda são:");
+        System.out.println("código:" + getCodVenda());
+        System.out.printf("data" + getDataVenda());
+        System.out.printf("ValorTotal:" + getValorTotal());
+        System.out.printf("foi finalizada?:" + isFinalizada());}
     @Override
     public void calculaValorTotal() {
 
