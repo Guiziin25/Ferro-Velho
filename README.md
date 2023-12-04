@@ -31,7 +31,7 @@ O projeto ainda está aberto a discussões e alterações, de acordo com as orie
 * 15- Algumas funcionalidades deverão estar disponíveis somente para a classe administrador.
 * ## Divisão do Projeto:
 * Classe Item: Guilherme Augusto
-* Classe Cliente: Ricardo Serra
+* Classe Usuario: Ricardo Serra
 * Classe Carrinho: Daniel Feitosa
 * Classe Venda: Arthur Seabra
 * Observação: O trabalho ainda será realizado em GRUPO, portanto poderão haver contribuições e correções de outros participantes nas classes onde não estão escalados.
