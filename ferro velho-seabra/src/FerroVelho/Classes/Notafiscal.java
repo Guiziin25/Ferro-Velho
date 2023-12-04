@@ -1,33 +1,29 @@
 package FerroVelho.Classes;
 
-import FerroVelho.Negocio.ControladorVenda;
-
 import java.time.LocalDate;
 
-public class Venda {
+public class Notafiscal {
     private static String CodVenda;
     private LocalDate DataVenda;
     private Carrinho Compra;
-    private final Usuario Cliente;
-    private boolean Finalizada;
+    private Usuario Cliente;
+
     //private LISTA dos tipos de peças
 
     //construtor da classe->
-    public Venda (String codvenda,Usuario cliente, LocalDate datavenda){
-        Venda.CodVenda= "#"+codvenda ;
+    public Notafiscal (String codvenda,Usuario cliente, LocalDate datavenda){
+        CodVenda= "#"+codvenda ;
         this.DataVenda= datavenda;
         this.Cliente= cliente;
-        this.Finalizada= false;
 
     }
     //getters e setters
-    public String getCodVenda(){return CodVenda;}
+    public String getCodVenda(){return this.CodVenda;}
     public void setCodVenda(String codVenda){this.CodVenda= "#"+codVenda;}
     public LocalDate getDataVenda(){return this.DataVenda;}
-    public void setDataVenda(LocalDate dataVenda) {DataVenda = dataVenda;}
+    public void setDataVenda(LocalDate dataVenda) {this.DataVenda = dataVenda;}
 
-    public boolean isFinalizada() {return Finalizada;}
-    public void setFinalizada(boolean finalizada) {Finalizada = finalizada;}
+
 
     // método pra teste na main
     public void infovenda(){
@@ -35,13 +31,9 @@ public class Venda {
         System.out.println("código:" + getCodVenda());
         System.out.printf("data" + getDataVenda());
         System.out.printf("ValorTotal:" + Compra.getValorTotal());
-        System.out.printf("foi finalizada?:" + isFinalizada());}
+        System.out.printf("foi finalizada?:" + Compra.isFinalizada());}
 
     //mais metodos haha
-    public void FinalizaVenda() {setFinalizada(true);
     public void ImprimeLista(){};
 
     }
-
-
-}

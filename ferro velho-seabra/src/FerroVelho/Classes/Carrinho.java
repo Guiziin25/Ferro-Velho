@@ -6,9 +6,11 @@ import java.util.List;
 
 //Atributos e declaração
 public class Carrinho{
+    private UsuarioCliente Dono;
     private List<ItemVenda> carrinhoDeCompras;
     private double ValorTotal;
     private int QuanTotal;
+    private boolean Finalizada;
 
     //Construtor
     public Carrinho(List<ItemVenda> carrinhoDeCompras, Double valorTotal, int quanTotal){
@@ -18,10 +20,15 @@ public class Carrinho{
     }
 
     //getters e setters
+    public UsuarioCliente getDono() {return Dono;}
+
+    public void setDono(UsuarioCliente dono) {Dono = dono;}
     public double getValorTotal(){return this.ValorTotal;}
     public void setValorTotal(double valorTotal){this.ValorTotal=valorTotal;}
     public int getQuanTotal(){return this.QuanTotal;}
     public void setQuanTotal(int quanTotal){this.QuanTotal= quanTotal;}
+    public boolean isFinalizada() {return Finalizada;}
+    public void setFinalizada(boolean finalizada) {Finalizada = finalizada;}
 
 
     //Métodos

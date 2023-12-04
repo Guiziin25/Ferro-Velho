@@ -1,28 +1,17 @@
 package FerroVelho.Classes;
-import java.sql.SQLOutput;
-import java.time.LocalDate;
 
-//Atributos e declaracao
-public class Usuario {
+public class UsuarioVendedor extends Usuario{
     private String cpf;
     private String email;
     private String nome;
     private String senha;
     private String login;
-    //metodos de cliente
-    public void AdicionarItem(){}
-    public void Pagar(){}
-
-
-    //Construtor
-    public Usuario(String login,String cpf, String email, String nome, String senha){
-        this.login= login;
-        this.cpf = cpf;
-        this.email = email;
-        this.nome = nome;
-        this.senha = senha;
+    public UsuarioVendedor(String login, String cpf, String email, String nome, String senha) {
+        super(login, cpf, email, nome, senha);
     }
-
+    //metodos de Vendedor
+    public void anunciarPeca(){};
+    public void finalizavenda(){}
 
     //Getters e Setters
     public String getCpf(){
@@ -47,7 +36,7 @@ public class Usuario {
         this.nome= nome;
     }
 
-     public String getLogin() {
+    public String getLogin() {
         return login;
     }
 

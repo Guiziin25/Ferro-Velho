@@ -3,7 +3,6 @@ package FerroVelho.Negocio;
 import java.util.ArrayList;
 import java.util.List;
 
-import FerroVelho.Classes.EnumTipoUser;
 import FerroVelho.Classes.Usuario;
 import FerroVelho.Dados.InterfaceRepositorioGenerico;
 import FerroVelho.Dados.RepositorioGenerico;
