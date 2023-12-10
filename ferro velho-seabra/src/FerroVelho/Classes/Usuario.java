@@ -3,28 +3,35 @@ import java.sql.SQLOutput;
 import java.time.LocalDate;
 
 //Atributos e declaracao
-public class Usuario {
+public abstract class Usuario {
+    private int id;
     private String cpf;
     private String email;
     private String nome;
     private String senha;
     private String login;
-    //metodos de cliente
-    public void AdicionarItem(){}
-    public void Pagar(){}
-
 
     //Construtor
-    public Usuario(String login,String cpf, String email, String nome, String senha){
+    public Usuario(String login,String cpf, String email, String nome, String senha, int id){
         this.login= login;
         this.cpf = cpf;
         this.email = email;
         this.nome = nome;
         this.senha = senha;
+        this.id= id;
     }
+    //getter abstrato
+    public abstract String getTipoUsuario();
 
 
     //Getters e Setters
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
     public String getCpf(){
         return this.cpf;
     }
@@ -34,14 +41,14 @@ public class Usuario {
     }
 
     public String getEmail() {
-        return this.email;
+        return email;
     }
     public void setEmail(String email){
         this.email= email;
     }
 
     public String getNome(){
-        return this.nome;
+        return nome;
     }
     public void setNome(String nome){
         this.nome= nome;
@@ -57,19 +64,9 @@ public class Usuario {
     }
 
     public String getSenha() {
-        return this.senha;
+        return senha;
     }
     public void setSenha(String senha) {
         this.senha = senha;
-    }
-    //metodo pra testar a classe no main
-    public void perfil(){
-        System.out.println("as informações do usuario são:");
-        System.out.printf("nome:",this.getNome());
-        System.out.printf("cpf:", this.getCpf());
-        System.out.printf("email:",this.getEmail());
-        System.out.printf("login:", this.getLogin());
-        System.out.printf("senha:",this.getSenha());
-
     }
 }

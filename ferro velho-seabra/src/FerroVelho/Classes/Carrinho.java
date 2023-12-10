@@ -6,7 +6,7 @@ import java.util.List;
 
 //Atributos e declaração
 public class Carrinho{
-    private UsuarioCliente Dono;
+    private UsuarioNormal Dono;
     private List<ItemVenda> carrinhoDeCompras;
     private double ValorTotal;
     private int QuanTotal;
@@ -20,9 +20,9 @@ public class Carrinho{
     }
 
     //getters e setters
-    public UsuarioCliente getDono() {return Dono;}
+    public UsuarioNormal getDono() {return Dono;}
 
-    public void setDono(UsuarioCliente dono) {Dono = dono;}
+    public void setDono(UsuarioNormal dono) {Dono = dono;}
     public double getValorTotal(){return this.ValorTotal;}
     public void setValorTotal(double valorTotal){this.ValorTotal=valorTotal;}
     public int getQuanTotal(){return this.QuanTotal;}

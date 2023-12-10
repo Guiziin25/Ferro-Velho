@@ -2,26 +2,40 @@ package FerroVelho.Classes;
 
 import java.time.LocalDate;
 
-public class Notafiscal {
-    private static String CodVenda;
+public class Venda {
+    private String CodVenda;
     private LocalDate DataVenda;
     private Carrinho Compra;
-    private Usuario Cliente;
+    private UsuarioNormal Cliente;
+    private UsuarioAdmin Funcionario;
 
     //private LISTA dos tipos de peças
 
     //construtor da classe->
-    public Notafiscal (String codvenda,Usuario cliente, LocalDate datavenda){
-        CodVenda= "#"+codvenda ;
+    public Venda (String codvenda,UsuarioNormal cliente, Carrinho compra,LocalDate datavenda, UsuarioAdmin funcionario ){
+        this.CodVenda= "#"+codvenda ;
         this.DataVenda= datavenda;
         this.Cliente= cliente;
+        this.Compra= compra;
+        this.Funcionario= funcionario;
 
     }
     //getters e setters
-    public String getCodVenda(){return this.CodVenda;}
+    public String getCodVenda(){return CodVenda;}
     public void setCodVenda(String codVenda){this.CodVenda= "#"+codVenda;}
-    public LocalDate getDataVenda(){return this.DataVenda;}
+    public LocalDate getDataVenda(){return DataVenda;}
     public void setDataVenda(LocalDate dataVenda) {this.DataVenda = dataVenda;}
+    public Carrinho getCompra() {return Compra;}
+
+    public void setCompra(Carrinho compra) {this.Compra = compra;}
+
+    public UsuarioNormal getCliente() {return Cliente;}
+
+    public void setCliente(UsuarioNormal cliente) {this.Cliente = cliente;}
+
+    public UsuarioAdmin getFuncionario() {return Funcionario;}
+
+    public void setFuncionario(UsuarioAdmin funcionario) {this.Funcionario = funcionario;}
 
 
 

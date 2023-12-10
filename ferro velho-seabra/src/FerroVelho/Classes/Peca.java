@@ -10,6 +10,9 @@ public class Peca {
     private EnumQualidade qualidade;
     private EnumAutomovel automovel;
     private Double preco;
+    private int id;
+
+    
 
     //Construtor
     public Peca(String nome, LocalDate data, String descricao, EnumTipo tipo, EnumQualidade qualidade, EnumAutomovel automovel, Double preco){
@@ -71,6 +74,14 @@ public class Peca {
     }
     public void setPreco(Double preco) {
         this.preco = preco;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
 
