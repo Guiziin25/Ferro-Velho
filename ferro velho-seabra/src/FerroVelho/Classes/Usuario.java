@@ -1,20 +1,30 @@
 package FerroVelho.Classes;
+import java.sql.SQLOutput;
+import java.time.LocalDate;
 
+//Atributos e declaracao
 public abstract class Usuario {
     private int id;
-    private String nome;
+    private String cpf;
     private String email;
-    private String login;
+    private String nome;
     private String senha;
+    private String login;
 
-    public Usuario(String nome, String email, String login, String senha) {
-        this.nome = nome;
+    //Construtor
+    public Usuario(String login,String cpf, String email, String nome, String senha, int id){
+        this.login= login;
+        this.cpf = cpf;
         this.email = email;
-        this.login = login;
+        this.nome = nome;
         this.senha = senha;
+        this.id= id;
     }
+    //getter abstrato
+    public abstract String getTipoUsuario();
 
-    // Getters e setters
+
+    //Getters e Setters
     public int getId() {
         return id;
     }
@@ -22,22 +32,41 @@ public abstract class Usuario {
     public void setId(int id) {
         this.id = id;
     }
+    public String getCpf(){
+        return this.cpf;
+    }
 
-    public String getNome() {
-        return nome;
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
 
     public String getEmail() {
         return email;
     }
+    public void setEmail(String email){
+        this.email= email;
+    }
 
-    public String getLogin() {
+    public String getNome(){
+        return nome;
+    }
+    public void setNome(String nome){
+        this.nome= nome;
+    }
+
+     public String getLogin() {
         return login;
+    }
+
+
+    public void setLogin(String login) {
+        this.login = login;
     }
 
     public String getSenha() {
         return senha;
     }
-
-    public abstract String getTipoUsuario();
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
 }

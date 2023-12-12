@@ -1,75 +1,53 @@
 package FerroVelho.Classes;
 
-import FerroVelho.Negocio.ControladorVenda;
-
 import java.time.LocalDate;
 
-public class Venda extends ControladorVenda {
-    private int CodVenda;
+public class Venda {
+    private String CodVenda;
     private LocalDate DataVenda;
-    private float ValorTotal;
-    private int QuanTotal;
-    private boolean Finalizada;
+    private Carrinho Compra;
+    private UsuarioNormal Cliente;
+    private UsuarioAdmin Funcionario;
+
     //private LISTA dos tipos de peças
 
     //construtor da classe->
-    public Venda (int cd, LocalDate dtv, float vt, int qt){
-        this.CodVenda= cd;
-        this.DataVenda=dtv;
-        this.ValorTotal=vt;
-        this.QuanTotal= qt;
-        this.Finalizada= false;
+    public Venda (String codvenda,UsuarioNormal cliente, Carrinho compra,LocalDate datavenda, UsuarioAdmin funcionario ){
+        this.CodVenda= "#"+codvenda ;
+        this.DataVenda= datavenda;
+        this.Cliente= cliente;
+        this.Compra= compra;
+        this.Funcionario= funcionario;
 
     }
-    public int getCodVenda(){
-        return this.CodVenda;
-    }
-    public void setCodVenda(int codVenda){
-        this.CodVenda= codVenda;
-    }
-    public LocalDate getDataVenda(){
-        return this.DataVenda;
-    }
-    public void setDataVenda(LocalDate dataVenda) {
-        DataVenda = dataVenda;
-    }
-    public float getValorTotal(){
-        return this.ValorTotal;
-    }
-    public void setValorTotal(float valorTotal){
-        this.ValorTotal=valorTotal;
-    }
-    public int getQuanTotal(){
-        return this.QuanTotal;
-    }
-    public void setQuanTotal(int quanTotal){
-        this.QuanTotal= quanTotal;
-    }
-    public boolean isFinalizada() {
-        return Finalizada;
-    }
+    //getters e setters
+    public String getCodVenda(){return CodVenda;}
+    public void setCodVenda(String codVenda){this.CodVenda= "#"+codVenda;}
+    public LocalDate getDataVenda(){return DataVenda;}
+    public void setDataVenda(LocalDate dataVenda) {this.DataVenda = dataVenda;}
+    public Carrinho getCompra() {return Compra;}
 
-    public void setFinalizada(boolean finalizada) {
-        Finalizada = finalizada;
-    }
+    public void setCompra(Carrinho compra) {this.Compra = compra;}
 
-    @Override
-    public void calculaValorTotal() {
+    public UsuarioNormal getCliente() {return Cliente;}
+
+    public void setCliente(UsuarioNormal cliente) {this.Cliente = cliente;}
+
+    public UsuarioAdmin getFuncionario() {return Funcionario;}
+
+    public void setFuncionario(UsuarioAdmin funcionario) {this.Funcionario = funcionario;}
+
+
+
+    // método pra teste na main
+    public void infovenda(){
+        System.out.println("as informações da venda são:");
+        System.out.println("código:" + getCodVenda());
+        System.out.printf("data" + getDataVenda());
+        System.out.printf("ValorTotal:" + Compra.getValorTotal());
+        System.out.printf("foi finalizada?:" + Compra.isFinalizada());}
+
+    //mais metodos haha
+    public void ImprimeLista(){};
 
     }
-
-    @Override
-    public void FinalizaVenda() {setFinalizada(true);
-
-    }
-
-    @Override
-    public void ImprimeLista() {
-
-    }
-
-    @Override
-    public void CalculaQuantidade() {
-
-    }
-}
