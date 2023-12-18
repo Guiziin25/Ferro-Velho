@@ -5,7 +5,7 @@ import java.util.List;
 
 import FerroVelho.Classes.Venda;
 
-class RepositorioVenda {
+public class RepositorioVenda {
     private List<Venda> vendas;
     private int proximoId;
 
