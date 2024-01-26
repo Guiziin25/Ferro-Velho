@@ -15,14 +15,14 @@ public class ControladorUsuario {
     }
 
     // Método para registrar um novo usuário
-    public void registrarUsuarioNormal(String nome, String email, String login, String senha, int id) {
-        Usuario novoUsuario = new UsuarioNormal(nome, email, login, senha,id);
+    public void registrarUsuarioNormal(String nome, String email, String login, String senha) {
+        Usuario novoUsuario = new UsuarioNormal(nome, email, login, senha);
         repositorioUsuario.adicionarUsuario(novoUsuario);
         System.out.println("Usuário registrado com sucesso!");
     }
 
-        public void registrarUsuarioAdmin(String nome, String email, String login, String senha, int id) {
-        Usuario novoUsuario = new UsuarioAdmin(nome, email, login, senha, id);
+        public void registrarUsuarioAdmin(String nome, String email, String login, String senha) {
+        Usuario novoUsuario = new UsuarioAdmin(nome, email, login, senha);
         repositorioUsuario.adicionarUsuario(novoUsuario);
         System.out.println("Usuário registrado com sucesso!");
     }
