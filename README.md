@@ -1,7 +1,6 @@
 # | Projeto Ferro-Velho do Ye |
 ## Integrantes:
 * Arthur Seabra - arthurgs.seabra@gmail.com
-* Daniel Feitosa - danielfbandrade2@gmail.com
 * Guilherme Augusto - gaandrade25@gmail.com
 * Ricardo Serra - ricardozaidan3@gmail.com
 ## Descrição geral do projeto:
@@ -32,7 +31,7 @@ O projeto ainda está aberto a discussões e alterações, de acordo com as orie
 * ## Divisão do Projeto:
 * Classe Item: Guilherme Augusto
 * Classe Usuario: Ricardo Serra
-* Classe Carrinho: Daniel Feitosa
+* Classe Carrinho: 
 * Classe Venda: Arthur Seabra
 * Classe ItemVenda: Arthur Seabra
 * Observação: O trabalho ainda será realizado em GRUPO, portanto poderão haver contribuições e correções de outros participantes nas classes onde não estão escalados.
